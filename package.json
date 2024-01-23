@@ -1,0 +1,20 @@
+{
+  "name": "poc-issue-what-the-dep",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@softnetics/what-the-dep": "^2.2.1",
+    "probot": "^12.3.3"
+  }
+}
