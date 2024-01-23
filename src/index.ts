@@ -1,5 +1,4 @@
-import { container } from "./container"
-import { ProbotApp } from "./probot"
+import { GithubClient } from "./client";
+import { container } from "./container";
 
-const probotApp = await container.get<ProbotApp>()
-console.log(probotApp.hello())
+console.log(await container.get<GithubClient>())

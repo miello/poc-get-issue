@@ -1,4 +1,6 @@
-import type { Probot } from "probot"
+import type { Probot, ProbotOctokit } from "probot"
+
+export type ProbotOctokitType = InstanceType<typeof ProbotOctokit>
 
 export class ProbotApp {
   constructor() {}
